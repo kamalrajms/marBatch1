@@ -1,0 +1,18 @@
+
+3/3/2026
+
+## Props
+
+    Props is nothing but , to pass the data from parent component to child component.
+
+        Declering props.
+        destructuring props.
+
+
+## styleing in react.js
+
+    Global styleing--- index.css and app.css
+    External styleing-- we need to create seperate style css file for a component
+    Module styleing--- we need to save the file name as [filename.module.css]
+    Inline styleing---- use an style attribute with {{}}
+    object styleing--- we need to declear an style in object way and  call that object name in style attribute.

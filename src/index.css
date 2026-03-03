@@ -1,0 +1,17 @@
+.hello {
+  background-color: red;
+  color: aliceblue;
+  padding: 20px;
+}
+.greeting {
+  background-color: black;
+  color: aliceblue;
+  padding: 50px;
+}
+.destructure {
+  margin: 100px;
+}
+
+.moduleLorem {
+  margin: 100px;
+}
