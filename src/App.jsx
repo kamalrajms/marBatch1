@@ -3,6 +3,8 @@ import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
 import Modulestyle from "./Modulestyle";
 import Objectstyle from "./Objectstyle";
+import ConditionalRendering from "./Component/ConditionalRendering";
+import ListRendering from "./Component/ListRendering";
 
 export default function App() {
   const name = "hari";
@@ -19,6 +21,8 @@ export default function App() {
 
   return (
     <div>
+      <ListRendering/>
+      <ConditionalRendering/>
       <Objectstyle />
       <Modulestyle />
       <DestructuringProps name={name} age={age} city={city} />
