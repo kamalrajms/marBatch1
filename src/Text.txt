@@ -64,4 +64,3 @@
 ## List rendreing
 
     rendreing multiple items dynamically using .map()
-    
