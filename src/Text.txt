@@ -63,4 +63,36 @@
 
 ## List rendreing
 
-    rendreing multiple items dynamically using .map()
+    rendreing multiple items dynamically using .map()  
+
+5/3/2026
+
+## useState()
+
+    useState is a react hook that allows you to add state (data that can change over time)
+    to a functional component.
+
+    Normally, in js  functionality, variables dissappear after the functional runs.
+    but with useState ,react remembers value between re-renders.
+
+    syntax:
+
+        const [state,setState]=useState(initialvalue)
+
+        state-- the current value of the state variable.
+        setState--- a function that updatess the state
+        initialvalue--- the starting  value of the state..
+
+## domain
+
+    .com--commercial
+    .org--Organization
+    .net--Network
+    .edu--education
+    .gov--Government
+    .mil--Military
+    .co--Company
+    .info--information
+    .biz--Business
+    .in--india
+

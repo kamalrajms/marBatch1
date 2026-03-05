@@ -5,6 +5,9 @@ import Modulestyle from "./Modulestyle";
 import Objectstyle from "./Objectstyle";
 import ConditionalRendering from "./Component/ConditionalRendering";
 import ListRendering from "./Component/ListRendering";
+import UseStateHook from "./Component/UseStateHook";
+import UseStateUser from "./Component/UseStateUser";
+import Darkmode from "./Component/Darkmode";
 
 export default function App() {
   const name = "hari";
@@ -21,8 +24,11 @@ export default function App() {
 
   return (
     <div>
-      <ListRendering/>
-      <ConditionalRendering/>
+      <Darkmode/>
+      <UseStateUser />
+      <UseStateHook />
+      <ListRendering />
+      <ConditionalRendering />
       <Objectstyle />
       <Modulestyle />
       <DestructuringProps name={name} age={age} city={city} />
