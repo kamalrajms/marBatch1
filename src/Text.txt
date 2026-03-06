@@ -26,7 +26,7 @@
     step 2 : select react
     step 3 : select javascript+swc
     step 4 : npm install                // install node module packages
-    step 5 : npm run dev
+    step 5 : npm run dev 
 
     if you want to re-run your project mean 
         npm run dev

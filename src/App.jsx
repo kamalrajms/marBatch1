@@ -8,6 +8,9 @@ import ListRendering from "./Component/ListRendering";
 import UseStateHook from "./Component/UseStateHook";
 import UseStateUser from "./Component/UseStateUser";
 import Darkmode from "./Component/Darkmode";
+import FieldsUse from "./Component/FieldsUse";
+import MultipleFields from "./Component/MultipleFields";
+import ConditionalForm from "./Component/ConditionalForm";
 
 export default function App() {
   const name = "hari";
@@ -24,6 +27,9 @@ export default function App() {
 
   return (
     <div>
+      <ConditionalForm/>
+      <MultipleFields/>
+      <FieldsUse/>
       <Darkmode/>
       <UseStateUser />
       <UseStateHook />
