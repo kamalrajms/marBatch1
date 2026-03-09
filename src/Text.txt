@@ -96,3 +96,27 @@
     .biz--Business
     .in--india
 
+9/3/2026
+
+## useEffect()
+
+    In react ,useEffect is a hook that lets you prform side effect 
+    in functional component.
+    Side effect are task that happen outside the normell react 
+    rendering process ,like:
+
+        Fetching data from an API
+        Setting up subscription.
+        Updating the browser DOm manually.
+        Starting /stoping timmers.
+
+
+    syntax:
+
+    useEffect(()=>{
+        // code...
+    },[dependency 1,dependency 2....])
+
+    dependency --- if we doesn't mension any dependency means it will
+                    runs only once at the begining. 
+

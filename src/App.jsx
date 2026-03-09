@@ -11,6 +11,9 @@ import Darkmode from "./Component/Darkmode";
 import FieldsUse from "./Component/FieldsUse";
 import MultipleFields from "./Component/MultipleFields";
 import ConditionalForm from "./Component/ConditionalForm";
+import USeEffectHook from "./Component/USeEffectHook";
+import Timer from "./Component/Timer";
+import StopWatchTimer from "./Component/StopWatchTimer";
 
 export default function App() {
   const name = "hari";
@@ -27,6 +30,9 @@ export default function App() {
 
   return (
     <div>
+      <StopWatchTimer/>
+      <Timer/>
+      <USeEffectHook/>
       <ConditionalForm/>
       <MultipleFields/>
       <FieldsUse/>
