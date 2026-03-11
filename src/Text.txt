@@ -120,3 +120,21 @@
     dependency --- if we doesn't mension any dependency means it will
                     runs only once at the begining. 
 
+        we can fetch the data from the  server by fetch and axious
+
+11/3/2026
+
+##  useref()
+
+        useref is a react Hook that gives you a box (.current) you can store 
+        anything in-- numbers,obj,function ,even dom elements.
+
+        that value persists between Renders.
+
+        Updating it does not causes your component to re-render.
+
+        {current:value}
+
+        
+
+        

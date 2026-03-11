@@ -14,6 +14,8 @@ import ConditionalForm from "./Component/ConditionalForm";
 import USeEffectHook from "./Component/USeEffectHook";
 import Timer from "./Component/Timer";
 import StopWatchTimer from "./Component/StopWatchTimer";
+import UseEffectAPI from "./Component/UseEffectAPI";
+import UseRefHook from "./Component/UseRefHook";
 
 export default function App() {
   const name = "hari";
@@ -30,13 +32,15 @@ export default function App() {
 
   return (
     <div>
-      <StopWatchTimer/>
-      <Timer/>
-      <USeEffectHook/>
-      <ConditionalForm/>
-      <MultipleFields/>
-      <FieldsUse/>
-      <Darkmode/>
+      <UseRefHook/>
+      <UseEffectAPI />
+      <StopWatchTimer />
+      <Timer />
+      <USeEffectHook />
+      <ConditionalForm />
+      <MultipleFields />
+      <FieldsUse />
+      <Darkmode />
       <UseStateUser />
       <UseStateHook />
       <ListRendering />
