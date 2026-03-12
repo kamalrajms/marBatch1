@@ -46,14 +46,21 @@ export default function UseRefHook() {
       <h2>timer: {sec}</h2>
       <button onClick={() => clearInterval(intervalRef.current)}>Stop</button>
       {/* eg3 */}
-      <input type="file" ref={imgref} onClick={handleImage} hidden />
-      {newProduct ? (
-        <div className="img-container" onClick={() =>imgref.current.click()}>
-          upload profile img..?
-        </div>
-      ) : (
-        <img className="Org-img" src={imageURL} alt="" />
-      )}
+      <div>
+        <input type="file" ref={imgref} onChange={handleImage} hidden />
+        {newProduct ? (
+          <div className="img-container" onClick={() => imgref.current.click()}>
+            upload profile img..?
+          </div>
+        ) : (
+          <img
+            className="Org-img"
+            onClick={() => imgref.current.click()}
+            src={imageURL}
+            alt=""
+          />
+        )}
+      </div>
     </div>
   );
 }

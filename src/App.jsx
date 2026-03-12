@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useContext, createContext } from "react";
 import Greeting from "./Greeting";
 import DestructuringProps from "./DestructuringProps";
 import Modulestyle from "./Modulestyle";
@@ -16,6 +16,10 @@ import Timer from "./Component/Timer";
 import StopWatchTimer from "./Component/StopWatchTimer";
 import UseEffectAPI from "./Component/UseEffectAPI";
 import UseRefHook from "./Component/UseRefHook";
+import First from "./Context/First";
+import ContextForm from "./Context/ContextForm";
+
+export const Pass = createContext();
 
 export default function App() {
   const name = "hari";
@@ -30,9 +34,24 @@ export default function App() {
   const age3 = "7744";
   const city3 = "madurai";
 
+  const [dark, setDark] = useState("light");
+  const data = { name: "Dhoni" };
+  console.log(dark);
+
   return (
     <div>
-      <UseRefHook/>
+      <nav>
+        <Pass.Provider value={{ dark, setDark, data }}>
+          <ContextForm />
+        </Pass.Provider>
+      </nav>
+      <div style={{ border: "2px solid #333", padding: "20px" }}>
+        <h1>App component--{city}</h1>
+        <Pass.Provider value={city}>
+          <First />
+        </Pass.Provider>
+      </div>
+      <UseRefHook />
       <UseEffectAPI />
       <StopWatchTimer />
       <Timer />

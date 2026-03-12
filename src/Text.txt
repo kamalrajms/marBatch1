@@ -137,4 +137,19 @@
 
         
 
-        
+12/3/2026
+
+## useContext()
+
+    Passing data from a parent component down deeply nested child components 
+    is annoying.
+
+    Normally, you'd have to pass props manually through each level (called props drilling)
+
+    useContext lets you skip all the middle components and share data directly.
+
+
+            Create a context
+            Provides a value
+            Consume the value
+
