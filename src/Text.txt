@@ -153,3 +153,17 @@
             Provides a value
             Consume the value
 
+
+16/3/2026
+
+## useReducer()
+
+    syntax:
+
+        const[state,dispatch]=useReducer(reducerFunction,initialstate)
+
+
+            state-- current state (like useState value)
+            dispatch(action)-- a function to tell the render what to do
+            reducerFunction(state,action)--the logic that returns a new state
+            initialstate--- starting values

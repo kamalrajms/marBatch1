@@ -18,6 +18,8 @@ import UseEffectAPI from "./Component/UseEffectAPI";
 import UseRefHook from "./Component/UseRefHook";
 import First from "./Context/First";
 import ContextForm from "./Context/ContextForm";
+import UseReducerHook from "./Component/UseReducerHook";
+import ReducerForm from "./Component/ReducerForm";
 
 export const Pass = createContext();
 
@@ -40,6 +42,8 @@ export default function App() {
 
   return (
     <div>
+      <ReducerForm />
+      <UseReducerHook />
       <nav>
         <Pass.Provider value={{ dark, setDark, data }}>
           <ContextForm />
