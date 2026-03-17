@@ -168,3 +168,19 @@
             reducerFunction(state,action)--the logic that returns a new state
             initialstate--- starting values
     
+17/3/2026
+
+## useCallback()
+
+    useCallback is a react Hook to memoize (store) a function so that react does not recereate
+    the function on every render unless dependency changes. it  is mainly used for performance 
+    optimization in react Applications.
+
+    in react ,every time component re-render, all function inside the component are recereate.
+
+
+     syntax: 
+     const name=useCallback(()=>{
+        //code
+     },[dependency 1,dependency...])
+

@@ -20,6 +20,8 @@ import First from "./Context/First";
 import ContextForm from "./Context/ContextForm";
 import UseReducerHook from "./Component/UseReducerHook";
 import ReducerForm from "./Component/ReducerForm";
+import UseCallBackHook from "./Component/UseCallBackHook";
+import CallBack from "./Component/CallBack";
 
 export const Pass = createContext();
 
@@ -42,6 +44,8 @@ export default function App() {
 
   return (
     <div>
+      <CallBack />
+      <UseCallBackHook />
       <ReducerForm />
       <UseReducerHook />
       <nav>
