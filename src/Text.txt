@@ -184,3 +184,50 @@
         //code
      },[dependency 1,dependency...])
 
+
+18/3/2026
+
+## Routing in react and Nested routing
+
+    Routing means navigating b/w different pages in a web app without refreshing the browser.
+
+    In teaining website,clicking a linnk reloads the whole page.
+
+    In react (Single page Applications) , routing lets us changes the view without reloading.
+
+
+        Better performance .
+        Smooth user experience
+        control over navigating.
+
+
+
+    commend:npm install react-router-dom
+
+
+    structure:
+
+    <BroWserRouter>
+    <Routes>
+    <Route  path="address path"  elements={<Home/>}/>
+    <Route  path=""  elements={<About/>}/>
+    <Route  path=""  elements={<Service/>}/>
+    </Routes>
+    </BroWserRouter>
+
+    BroWserRouter
+
+        It is the main wrapper component for  routing in react App.
+        It Enables  Navigation using the browser URL (history API).
+        Without this routing will ot work.
+
+
+    Routes
+        It contains all the  <Route/> component
+        It tells React Router which component to show for which path.
+        Only one route will shown at a timme.
+
+    Route:
+        defines specific URL path and which component should load for the path.
+
+

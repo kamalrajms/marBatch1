@@ -22,6 +22,13 @@ import UseReducerHook from "./Component/UseReducerHook";
 import ReducerForm from "./Component/ReducerForm";
 import UseCallBackHook from "./Component/UseCallBackHook";
 import CallBack from "./Component/CallBack";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Home from "./Routing/Home";
+import About from "./Routing/About";
+import Service from "./Routing/Service";
+import Contact from "./Routing/Contact";
+import APPdev from "./Routing/APPdev";
+import WebDev from "./Routing/WebDev";
 
 export const Pass = createContext();
 
@@ -41,45 +48,68 @@ export default function App() {
   const [dark, setDark] = useState("light");
   const data = { name: "Dhoni" };
   console.log(dark);
+  const display = false;
 
   return (
     <div>
-      <CallBack />
-      <UseCallBackHook />
-      <ReducerForm />
-      <UseReducerHook />
-      <nav>
-        <Pass.Provider value={{ dark, setDark, data }}>
-          <ContextForm />
-        </Pass.Provider>
-      </nav>
-      <div style={{ border: "2px solid #333", padding: "20px" }}>
-        <h1>App component--{city}</h1>
-        <Pass.Provider value={city}>
-          <First />
-        </Pass.Provider>
-      </div>
-      <UseRefHook />
-      <UseEffectAPI />
-      <StopWatchTimer />
-      <Timer />
-      <USeEffectHook />
-      <ConditionalForm />
-      <MultipleFields />
-      <FieldsUse />
-      <Darkmode />
-      <UseStateUser />
-      <UseStateHook />
-      <ListRendering />
-      <ConditionalRendering />
-      <Objectstyle />
-      <Modulestyle />
-      <DestructuringProps name={name} age={age} city={city} />
-      <DestructuringProps name={name2} age={age2} city={city2} />
-      <DestructuringProps name={name3} age={age3} city={city3} />
+      {display && (
+        <div>
+          <CallBack />
+          <UseCallBackHook />
+          <ReducerForm />
+          <UseReducerHook />
+          <nav>
+            <Pass.Provider value={{ dark, setDark, data }}>
+              <ContextForm />
+            </Pass.Provider>
+          </nav>
+          <div style={{ border: "2px solid #333", padding: "20px" }}>
+            <h1>App component--{city}</h1>
+            <Pass.Provider value={city}>
+              <First />
+            </Pass.Provider>
+          </div>
+          <UseRefHook />
+          <UseEffectAPI />
+          <StopWatchTimer />
+          <Timer />
+          <USeEffectHook />
+          <ConditionalForm />
+          <MultipleFields />
+          <FieldsUse />
+          <Darkmode />
+          <UseStateUser />
+          <UseStateHook />
+          <ListRendering />
+          <ConditionalRendering />
+          <Objectstyle />
+          <Modulestyle />
+          <DestructuringProps name={name} age={age} city={city} />
+          <DestructuringProps name={name2} age={age2} city={city2} />
+          <DestructuringProps name={name3} age={age3} city={city3} />
 
-      <Greeting FirstName={name} age={age} />
-      <h2>hello--{name}</h2>
+          <Greeting FirstName={name} age={age} />
+          <h2>hello--{name}</h2>
+        </div>
+      )}
+      <BrowserRouter>
+        <div className="header">
+          <Link to={""}>Home</Link>
+          <Link to={"/About"}>About</Link>
+          <Link to={"/Service"}>Service</Link>
+          <Link to={"/Contact"}>Contact</Link>
+        </div>
+
+        <Routes>
+          <Route path="" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Service" element={<Service />} >
+            <Route path="" element={<APPdev/>}/>
+            <Route path="Web" element={<WebDev/>}/>
+          </Route>
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
