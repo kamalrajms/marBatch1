@@ -248,3 +248,33 @@
 
     UseID() is a reactHook that creates a Unique and stable ID for  each component instance.
     
+
+
+24/3/2026
+
+## API Integration
+
+    fetch,axios
+
+    commend:npm i axios or npm install axios
+
+    structure of axios
+
+    response={
+        data:[{id:1,name:""},{id:1,name:""},{id:1,name:""}],
+        status:200,
+        response method:get,
+        header:{
+            
+        }
+    }
+
+## Custom Hooks
+
+    A custom Hook is a reusable function in a react that contains logic using hook (like useState,useEffect...)
+
+    It allows you to share and reuse stateful logic between multiple component without repeting code.
+
+    the name of a custom hook must be start with [use] ,such as useFetch,useLoaction...ect..
+
+    we need create custom hook in js file
