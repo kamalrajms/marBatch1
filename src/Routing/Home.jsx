@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import UseParamHook from "../Component/UseParamHook";
 import { useNavigate } from "react-router-dom";
+import CRUD from "../Component/CRUD";
 
 export default function Home() {
   const page = useNavigate();
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <div>
       <h2>Home component</h2>
+      <CRUD/>
       <h3>count:{count}</h3>
       <button onClick={() => setCount(count + 1)}>Incerement</button>
       <button onClick={() => page("/Service")}>Move to service</button>

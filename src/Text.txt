@@ -278,3 +278,32 @@
     the name of a custom hook must be start with [use] ,such as useFetch,useLoaction...ect..
 
     we need create custom hook in js file
+
+
+25/03/2026
+
+## CRUD operation
+
+    create data ---> Post method
+    Read data ---> Get method
+    Update data ---> PUT method
+    Delete data ---> DELETE method
+
+
+                http request
+    Client   ---------------------> server
+             <--------------------
+                http response {json}
+
+## netlify
+
+        setp1: push Applications into github
+        setp2: create account in netlify
+        setp3:link github in netlify account
+        setp4:choose your project reporesetry
+        setp5:deploy
+
+
+
+
+                thank you all
